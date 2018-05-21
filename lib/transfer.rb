@@ -10,7 +10,7 @@ class Transfer
   end
 
   def valid?
-
+    
   end
 
 end
