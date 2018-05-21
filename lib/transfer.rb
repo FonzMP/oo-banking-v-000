@@ -3,8 +3,8 @@ class Transfer
 
   attr_reader :sender
 
-  def initialize(sender)
-    @sender = sender
+  def initialize(name)
+    @sender
   end
 
 end
