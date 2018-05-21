@@ -26,8 +26,8 @@ class Transfer
       @sender.deposit(negative_amount)
     end
     if !self.valid? || self.status == "complete"
+      self.status == "rejected"
       "Transaction rejected. Please check your account balance."
-      self.status = "rejected"
     end
   end
 
