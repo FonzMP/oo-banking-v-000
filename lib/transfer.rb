@@ -22,6 +22,7 @@ class Transfer
       if self.valid?
         self.status = "complete"
         negative_amount = -(@amount)
+        binding.pry
         @receiver.deposit(@amount)
         @sender.deposit(negative_amount)
         counter += 1
