@@ -37,6 +37,7 @@ class Transfer
       negative_amount = -(@amount)
       @receiver.deposit(negative_amount)
       @sender.deposit(@amount)
+      self.status = "reversed"
     end
   end
 
