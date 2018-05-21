@@ -19,14 +19,15 @@ class Transfer
   def execute_transaction
     counter = 0
     while counter < 1
-    if self.valid?
-      self.status = "complete"
-      negative_amount = -(@amount)
-      @receiver.deposit(@amount)
-      @sender.deposit(negative_amount)
-    else
-      false
-    end
+      if self.valid?
+        self.status = "complete"
+        negative_amount = -(@amount)
+        @receiver.deposit(@amount)
+        @sender.deposit(negative_amount)
+      else
+        false
+      end
+      counter += 1
   end
 
 end
