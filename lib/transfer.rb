@@ -17,6 +17,7 @@ class Transfer
   end
 
   def execute_transaction
+    counter = 0
     if self.valid?
       self.status = "complete"
       negative_amount = -(@amount)
