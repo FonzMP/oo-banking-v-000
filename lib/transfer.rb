@@ -33,7 +33,7 @@ class Transfer
   end
 
   def reverse_transfer
-    
+    negative_amount = -(@amount)
   end
 
 end
