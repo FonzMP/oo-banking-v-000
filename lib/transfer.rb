@@ -25,6 +25,7 @@ class Transfer
       if positive > 0
         @receiver.deposit(@amount)
         self.status = "complete"
+      else
     else
       self.status = "rejected"
       "Transaction #{self.status}. Please check your account balance."
