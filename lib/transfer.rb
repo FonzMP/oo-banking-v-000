@@ -25,7 +25,7 @@ class Transfer
       @receiver.deposit(@amount)
       @sender.deposit(negative_amount)
     else
-      "Transaction rejected. Please check your account balance."
+      return "Transaction rejected. Please check your account balance."
     end
   end
 
