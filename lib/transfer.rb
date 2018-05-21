@@ -22,7 +22,7 @@ class Transfer
     if self.valid? && self.status == "pending"
       negative_amount = -(@amount)
       positive = @sender.deposit(negative_amount)
-      if positive > 0
+      if positive >= 0
         @receiver.deposit(@amount)
         self.status = "complete"
       else
