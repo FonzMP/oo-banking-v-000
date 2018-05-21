@@ -24,10 +24,11 @@ class Transfer
         negative_amount = -(@amount)
         @receiver.deposit(@amount)
         @sender.deposit(negative_amount)
+        counter += 1
       else
         false
       end
-      counter += 1
+
     end
   end
 
