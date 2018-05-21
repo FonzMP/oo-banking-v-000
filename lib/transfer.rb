@@ -35,7 +35,7 @@ class Transfer
   def reverse_transfer
     if self.status == "complete"
       negative_amount = -(@amount)
-      @recever.deposit(negative_amount)
+      @receiver.deposit(negative_amount)
       @sender.deposit(@amount)
     end
   end
