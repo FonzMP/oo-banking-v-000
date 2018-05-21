@@ -35,6 +35,7 @@ class Transfer
   def reverse_transfer
     negative_amount = -(@amount)
     @recever.deposit(negative_amount)
+    @sender.deposit(@amount)
   end
 
 end
