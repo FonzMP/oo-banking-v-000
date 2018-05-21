@@ -19,7 +19,7 @@ class Transfer
   end
 
   def execute_transaction
-    if self.valid?
+    if self.valid? && self.status != "complete"
       self.status = "complete"
       negative_amount = -(@amount)
       binding.pry
