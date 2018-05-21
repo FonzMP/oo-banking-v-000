@@ -20,6 +20,7 @@ class Transfer
       negative_amount = -(@amount)
       @receiver.deposit(@amount)
       @sender.deposit(negative_amount)
+    end
   end
 
 end
