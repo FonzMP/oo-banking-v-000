@@ -11,6 +11,6 @@ class Transfer
 
   def valid?
 
-end
+  end
 
 end
