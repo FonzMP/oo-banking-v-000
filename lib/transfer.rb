@@ -23,7 +23,6 @@ class Transfer
       self.status == "rejected"
       "Transaction rejected. Please check your account balance."
     else
-    end
     if self.valid? && self.status != "complete"
       self.status = "complete"
       negative_amount = -(@amount)
