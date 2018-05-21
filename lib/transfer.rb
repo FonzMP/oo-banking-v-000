@@ -17,6 +17,7 @@ class Transfer
 
   def execute_transaction
     if self.valid?
+      @status = "complete"
       negative_amount = -(@amount)
       @receiver.deposit(@amount)
       @sender.deposit(negative_amount)
