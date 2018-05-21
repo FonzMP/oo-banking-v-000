@@ -22,8 +22,10 @@ class Transfer
     if self.valid? && self.status == "pending"
       self.status = "complete"
       negative_amount = -(@amount)
-      @receiver.deposit(@amount)
+
       @sender.deposit(negative_amount)
+
+      @receiver.deposit(@amount)
     else
       self.status = "rejected"
       "Transaction #{self.status}. Please check your account balance."
