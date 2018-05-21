@@ -28,6 +28,7 @@ class Transfer
         false
       end
       counter += 1
+    end
   end
 
 end
