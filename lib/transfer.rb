@@ -25,8 +25,8 @@ class Transfer
       @receiver.deposit(@amount)
       @sender.deposit(negative_amount)
     else
-      self.status == "rejected"
-
+      self.status = "rejected"
+      
     end
   end
 
