@@ -16,6 +16,7 @@ class Transfer
   end
 
   def execute_transaction
+    negative_amount = =(@amount)
     @receiver.deposit(@amount)
     @sender.deposit(-@amount)
   end
