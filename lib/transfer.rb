@@ -1,7 +1,7 @@
 class Transfer
   # your code here
 
-  def initialize(sender)
+  def self.initialize(sender)
     @sender = sender
   end
 
