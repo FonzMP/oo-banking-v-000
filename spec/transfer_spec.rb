@@ -7,7 +7,7 @@ describe 'Transfer' do
   let(:bad_transfer) { Transfer.new(amanda, avi, 4000) }
 
   describe 'Transfer' do
-    describe 'initialize' do
+    describe '#initialize' do
       it "can initialize a Transfer" do
         expect(transfer).to be_a(Transfer)
       end
