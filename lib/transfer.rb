@@ -30,7 +30,6 @@ class Transfer
         @sender.deposit(negative_amount)
       end
     end
-
   end
 
 end
